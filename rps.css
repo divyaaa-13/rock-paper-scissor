@@ -1,0 +1,112 @@
+*{
+    margin: 0;   padding: 0;  
+    border: borderbox;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background-color: peachpuff
+}
+
+/* HEADER */
+header{
+    height: 10rem;
+    background-color: black;
+}
+h1{
+    color: bisque;
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+/* CHOICES */
+#choices{
+    height: 30rem;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11rem;
+}
+.choice{
+    height: 20rem;    width: 20rem;
+    border: 0.4rem solid black ;
+    border-radius: 50%;
+}
+#rock{
+    background-image: url(rock.png);    background-size: cover;
+}
+#paper{
+    background-image: url(paper.png);    background-size: cover;
+}
+#scissor{
+    background-image: url(scissors.png);    background-size: cover;
+}
+.choice:hover{
+    opacity: 60%;
+    cursor: grab;
+}
+
+/* SCOREBOARD */
+#scoreboard{
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem
+    ;
+}
+p{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.scores{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/* MSGBOX */
+#msgbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#msg{
+    margin-top: 8rem;
+    text-align: center;
+    font-size: 4rem;
+    padding: 1rem 1rem 1rem 1rem;
+    border: 0.5rem solid black;
+    border-radius: 2rem;
+}
+#msg:hover{
+    background-color: black;
+    color: white;
+    cursor: grab;
+}
+
+@media(min-width : 319px) and (max-width : 480px){
+    html{
+        font-size: 6px;
+    }
+    #choices{
+        height: 70rem;
+        flex-direction: column;
+        gap: 5rem;
+    }
+}
+
+@media(min-width : 481px) and (max-width : 850px){
+    html{
+        font-size: 6px;
+    }
+    #choices{
+        height: 70rem;
+        flex-direction: column;
+        gap: 4rem;
+    }
+}
