@@ -36,13 +36,13 @@ h1{
     border-radius: 50%;
 }
 #rock{
-    background-image: url(rock.png);    background-size: cover;
+    background-image: url(/assets/rock.png);    background-size: cover;
 }
 #paper{
-    background-image: url(paper.png);    background-size: cover;
+    background-image: url(/assets/paper.png);    background-size: cover;
 }
 #scissor{
-    background-image: url(scissors.png);    background-size: cover;
+    background-image: url(/assets/scissors.png);    background-size: cover;
 }
 .choice:hover{
     opacity: 60%;
